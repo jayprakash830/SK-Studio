@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Photo Studio | Professional Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SK Photo Studio</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Capturing Moments That Last Forever</h1>
+                <h2>By Mahesh Kumawat</h2>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn primary-btn">View Portfolio</a>
+                    <a href="#contact" class="btn secondary-btn">Book a Session</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="photo/camera.jpg" alt="Professional camera">
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <p>A glimpse into our photographic journey</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="portrait">
+                    <img src="photo/DSC_8379.JPG" alt="Couple portrait">
+                    <div class="overlay">
+                        <h3>Couple Portrait</h3>
+                        <p>Professional couple photography with natural lighting</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="photo/DSC_8365.JPG" alt="Brother & Sister">
+                    <div class="overlay">
+                        <h3>Brother & Sister</h3>
+                        <p>Capturing sibling bonds in artistic compositions</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="photo/DSC_6254.JPG" alt="Mountain landscape">
+                    <div class="overlay">
+                        <h3>Mountain Majesty</h3>
+                        <p>Breathtaking mountain landscapes at golden hour</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="photo/DSC_6609 - Copy.JPG" alt="Camera photography">
+                    <div class="overlay">
+                        <h3>The Art of Photography</h3>
+                        <p>Creative still life with professional equipment</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="photo/nature.jpg" alt="Nature photography">
+                    <div class="overlay">
+                        <h3>Nature's Canvas</h3>
+                        <p>The beauty of natural landscapes in perfect light</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="photo/tower.jpg" alt="Tower photography">
+                    <div class="overlay">
+                        <h3>Urban Architecture</h3>
+                        <p>Dramatic perspectives of iconic structures</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Professional photography for every occasion</p>
+            </div>
+            
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-heart"></i></div>
+                    <h3>Pre-Wedding</h3>
+                    <p>Capture the romance and excitement before your big day with our artistic pre-wedding photoshoots.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-camera"></i></div>
+                    <h3>Wedding Photography</h3>
+                    <p>Complete wedding coverage with candid moments, traditional portraits, and artistic compositions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-birthday-cake"></i></div>
+                    <h3>Birthday Events</h3>
+                    <p>Celebrate your special day with professional photography that captures all the joy and happiness.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-user"></i></div>
+                    <h3>Portrait Sessions</h3>
+                    <p>Professional portrait photography for individuals, couples, and families with custom settings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about us</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="quote">"Mahesh captured our wedding day perfectly. The photos are beyond what we expected!"</div>
+                    <div class="client">- Priya & Rahul</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The pre-wedding photoshoot was amazing. Professional, creative and so much fun!"</div>
+                    <div class="client">- Meera & Ajay</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"SK Photo Studio delivered exceptional photos for our corporate event. Highly recommended!"</div>
+                    <div class="client">- Tech Solutions Ltd</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>skstudiobay79@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 9929494479</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Bay, Sikar, Rajshthan</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="7455a74b-efa6-48df-87e2-4ef5af4d7d85">
+
+                    <div class="form-group">
+                        <input name="name" type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input name="email" type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input name="subject" type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SK Photo Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -319,10 +319,10 @@ section {
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 300px;
+    gap: 50px;
 }
 
-/* New styling for anchor tags in services-container */
+/* Updated styling for anchor tags in services-container */
 .services-container a {
     display: block;
     text-decoration: none;
@@ -331,11 +331,14 @@ section {
     transition: var(--transition);
     position: relative;
     color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
 }
 
 .services-container a:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    color: var(--secondary-color);
 }
 
 .services-container a::before {
@@ -345,22 +348,39 @@ section {
     left: 0;
     width: 100%;
     height: 0;
-    background-color: rgba(44, 62, 80, 0.1);
+    background: linear-gradient(to bottom, rgba(231, 76, 60, 0.1), transparent);
     transition: var(--transition);
-    z-index: -1;
+    z-index: 1;
 }
 
 .services-container a:hover::before {
     height: 100%;
 }
 
+.services-container a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.services-container a:hover::after {
+    width: 80%;
+}
+
 .service-card {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     text-align: center;
     transition: var(--transition);
+    position: relative;
+    z-index: 2;
 }
 
 .service-card:hover {
@@ -402,6 +422,39 @@ section {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     text-align: center;
+}
+
+/* New styling for anchor tags in testimonial slider */
+.testimonial-slider a {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 500;
+    position: relative;
+    padding: 2px 4px;
+    transition: var(--transition);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--secondary-color);
+}
+
+.testimonial-slider a:hover {
+    color: var(--secondary-color);
+    background-color: rgba(231, 76, 60, 0.05);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.testimonial-slider a::after {
+    content: '→';
+    position: absolute;
+    opacity: 0;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--transition);
+}
+
+.testimonial-slider a:hover::after {
+    opacity: 1;
+    right: -20px;
 }
 
 .quote {

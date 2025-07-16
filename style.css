@@ -318,8 +318,8 @@ section {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 /* Updated styling for anchor tags in services-container */
@@ -639,6 +639,11 @@ section {
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+    
+    .services-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -654,5 +659,10 @@ section {
     
     .portfolio-filter {
         flex-wrap: wrap;
+    }
+    
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
